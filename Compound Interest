@@ -1,0 +1,12 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+	float amount , r , t , p , compoundAmount;
+	
+	p = 1200; t=2; r=5.4;
+	amount = p * pow((1 + r /100) , t );
+	compoundAmount = amount - p;
+	cout << "Compound Interest = " << compoundAmount << endl;
+}
